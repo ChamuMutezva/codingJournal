@@ -10,11 +10,10 @@ Having set the container with the css grid property -
 There comes a time when you only wants to move one element to the right.
 Here is how todo it:
 
-` #itemToMoveRight {
+`#itemToMoveRight {
     justify-self: end;
     } `
       
-
     # Day 2 Tuesday 5 March 2019
     ## Javascript - indexOf and lastIndexOf 
     indexOf and lastIndexOf can be used for string manipulation
