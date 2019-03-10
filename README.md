@@ -24,7 +24,16 @@ Here is how it can be done:
  ### lastIndexOf
     The lastIndexOf grabs the last occurence of a letter or a string.
     `let word = "chamunorwa";    let pos2 = word.lastIndexOf("a");`
-    This gives a value of 10.    
+    This gives a value of 10.
+ # Day 3 - Sunday 10 March 2019
+ ## Iterating an object
+ Given an object ** obj ** . To iterate through an object and probably separate the keys and the values.
+ ```
+ for (let [key, value] of Object.entries(obj)) {
+        console.log(key , " ", value);
+    }
+```
+
     
     
           
