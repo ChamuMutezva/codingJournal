@@ -27,7 +27,7 @@ Here is how it can be done:
     This gives a value of 10.
  # Day 3 - Sunday 10 March 2019
  ## Iterating an object
- Given an object __ obj __ . To iterate through an object and probably separate the keys and the values.
+ Given an object **obj** . To iterate through an object and probably separate the keys and the values.
  ```
  for (let [key, value] of Object.entries(obj)) {
         console.log(key , " ", value);
