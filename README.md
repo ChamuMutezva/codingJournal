@@ -33,6 +33,20 @@ Here is how it can be done:
         console.log(key , " ", value);
     }
 ```
+# Day 4 - The Let Syntax
+Let is not hoisted, it is attached to the block it is declared, whilst var will be attached to either the function it is declared or Global . See example below.
+```
+function foo() {
+   var bar = "bar";
+   for (let i = 0; i < bar.length; i++){
+      console.log(bar.charAt(i));
+   }
+   console.log(i);
+}
+foo();
+```
+'let' will be confined in the for loop block only, outside the block 
+`console.log(i)` will produce an "i is undefined" error. If we replace 'let' with 'var' , i will be hoisted to be inclusive in the whole function block.
 
     
     
