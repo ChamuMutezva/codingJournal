@@ -45,7 +45,7 @@ function foo() {
 }
 foo();
 ```
-'let' will be confined in the for loop block only, outside the block 
+'let' will be confined in the for loop block only and not the function block as a whole , outside the if block 
 `console.log(i)` will produce an "i is undefined" error. If we replace 'let' with 'var' , i will be hoisted to be inclusive in the whole function block.
 
     
