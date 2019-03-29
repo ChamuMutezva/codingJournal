@@ -48,6 +48,39 @@ foo();
 'let' will be confined in the for loop block only and not the function block as a whole , outside the if block 
 `console.log(i)` will produce an "i is undefined" error. If we replace 'let' with 'var' , i will be hoisted to be inclusive in the whole function block.
 
+# Day 5 - Array Helper methods
+## Traditional Loops.
+###  For loop
+
+Consider the following code.
+``` const myNumbers = [123, "chamu", 75, 100] ```
+To loop over the array  using the for loop , look at the code below.
+```
+for (let i = 0; i < myNumbers.length; i++) {
+   console.log(myNumbers[i]);
+}
+```
+This will print the following values to the console;
+123, chamu, 75 and 100.
+
+However there are now new helper methods which came out with advent of es5 and es6.
+Among them includes "forEach", Map, reduce,  sort, every, some.
+
+### forEach array helper method.
+The above array can also be accessed using the forEach methods.
+See the illustration below.
+``` const forEachArray = myNumbers.forEach(element => console.log(element)); ```
+However the forEach can take a callBack function with three parameters. The last 2 are optional.
+The parameters are element, index and array. Below is an example for a forEach with 2 parameters.
+
+```
+ const forIndex = myNumbers.forEach((element, index) => {
+   console.log("The element " + element + " is at index " + index);
+})
+```
+
+
+
     
     
           
