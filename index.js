@@ -21,3 +21,15 @@ const forIndex = myNumbers.forEach((element, index) => {
 const forEachIndexArray = myNumbers.forEach((element, index, array) => {
     console.log("The array " + array );
 })
+
+//Map helper methods at work example
+const postsJSON = [
+  '{"postId":1355,"commentsQuantity":5}',
+  '{"postId":5131,"commentsQuantity":13}',
+  '{"postId":6134,"commentsQuantity":2}'
+];
+
+/* From the "postsJSON" array create "posts" array that will consist of JavaScript objects */
+const posts = postsJSON.map(JSON.parse);
+console.log(posts);
+

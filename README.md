@@ -49,6 +49,7 @@ foo();
 `console.log(i)` will produce an "i is undefined" error. If we replace 'let' with 'var' , i will be hoisted to be inclusive in the whole function block.
 
 # Day 5 - Array Helper methods
+Friday 29 March 2019
 ## Traditional Loops.
 ###  For loop
 
@@ -78,6 +79,85 @@ The parameters are element, index and array. Below is an example for a forEach w
    console.log("The element " + element + " is at index " + index);
 })
 ```
+
+### Map array helper method.
+Used to produce a new array. It accepts a callback function which can take up to
+3 parameters (currentValue, index, array). The last 2 parameters are optional.
+Map methods creates a brand new array.
+
+Example
+```
+const myNumbers = [1, 5, 7];
+const squareNum = myNumbers.map(element => element * element);
+console.log(squareNum);
+```
+The above code will print an array containing the square numbers of myNumbers
+[1, 25 , 49]
+
+### Filter array helper method
+Introduced in es5. Produces a brand new array. 
+Takes also up to 3 parameters, it is used to find specific data 
+of an array.
+
+Example
+
+```
+const myNumbers = [10, 25, 56, 100, 5];
+```
+create an array for numbers that are greater than 10 from the array myNumbers above
+
+```
+const filteredNumbers = myNumbers.filter(elem => elem > 10);
+console.log(filteredNumbers) // 25, 25, 100
+```
+
+### find array helper method
+Similar to Filter. Find retains element or undefined if no matching element is found
+Find will break its execution once a matching element is found.
+
+```
+const myArray = [10, [], {}, "abc", true, 15];
+
+const result = myArray.find(element => typeof element === "boolean");
+
+console.log(result)
+```
+`true` will be printed to the console.
+
+### every array helper method
+Takes a callback function with upto 3 parameters. First parameter is mandatory
+Callback function may return true all false. Used to check elements in an array
+if they contain the same characteristics.
+
+### some helper method
+Takes a callback functions with upto 3 parameters like the above other methods
+Return true if any of the elements in the array has the required characteristics.
+
+//Example 1 
+Check if the array contains positive numbers
+```
+const myNumbers = [3, -5, 1, 10, -7];
+const isPositiveNum = element => typeof element === "number" && element > 0;
+
+const everyMethod = myNumbers.every(isPositiveNum);
+const someMethod = myNumbers.some(isPositiveNum);
+```
+Result will be `false` for the everyMethod function and will be `true` for someMethod.
+
+### includes helper method
+does not require callback function, it accepts 2 arguments (searchElememt and optional starting index).
+loops thru all elements in the array and compares it to the searchElement. If a 
+match is found it will return true otherwise it returns false. Works perfectly with primitive types
+
+Example 
+```
+const myArray = [10, 'abc', true, undefined, null, [1,2]];
+console.log(myArray.includes(true));
+console.log(myArray.includes(10));
+```
+
+
+
 
 
 
