@@ -154,8 +154,57 @@ Example
 const myArray = [10, 'abc', true, undefined, null, [1,2]];
 console.log(myArray.includes(true));
 console.log(myArray.includes(10));
+
+```
+### reduce helper method
+Loops thru elements of array. It reduces an array to one value. It takes 
+up to 4 arguments, (accumulator ,accumulator, index, array).
+
+Example 1
+Sum of numbers
+```
+const myNumbers = [5, 10, 3, 15];
+const sum = arrayOfNumbers =>
+arrayOfNumbers.reduce((accumulator, number) => accumulator + number, 0);
+
+console.log(sum(myNumbers)).
 ```
 
+Example 2
+```
+const persons = [
+    {
+      name: "veronica",
+      age: 25
+      },
+
+      {
+        name: "John",
+        age: 21
+        },
+
+        {
+          name:  "chamu",
+          age: 27
+        }
+
+        ];
+        const personNames = arrayOfPersons => 
+        arrayOfPersons.reduce(
+          (names, person) => {
+            names.push(person.name);
+            return names;
+            }, []);
+
+ console.log(personsNames(persons));
+ ```
+ 
+ #Semantic Elements
+ ##Open attribute
+ When the `open` attribute is appended to a semantic element which has a list of elements,
+ the elements will be visible by default. Clicking on the arrow will close the list and open again 
+ when clicked. It can be used by the new `details` semantic element
+ 
 
 
 
