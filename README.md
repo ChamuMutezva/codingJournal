@@ -199,8 +199,8 @@ const persons = [
  console.log(personsNames(persons));
  ```
  
- #Semantic Elements
- ##Open attribute
+ # Semantic Elements
+ ## Open attribute
  When the `open` attribute is appended to a semantic element which has a list of elements,
  the elements will be visible by default. Clicking on the arrow will close the list and open again 
  when clicked. It can be used by the new `details` semantic element
