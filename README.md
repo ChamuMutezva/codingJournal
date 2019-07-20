@@ -158,7 +158,7 @@ console.log(myArray.includes(10));
 ```
 ### reduce helper method
 Loops thru elements of array. It reduces an array to one value. It takes 
-up to 4 arguments, (accumulator ,accumulator, index, array).
+up to 4 arguments, (accumulator ,currentValue, index, array).
 
 Example 1
 Sum of numbers
