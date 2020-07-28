@@ -39,3 +39,12 @@ Go to your project folder in the terminal, and paste these two commands:
 Step 1: Run npm init -y (if it fails, here’s a fix)
 Step 2: Run npm install babel-cli@6 babel-preset-react-app@3
 ```
+
+## Deploy project on Netlify
+### Steps
+1. ` npm run build`
+2. ` npm install netlify-cli -g `
+3. `netlify deploy `
+4. ``` follow command line prompts and choose yes for new project and ./build as your deploy folder and voila you have a production React app! ```
+5. ```If everything looks good on your draft URL, deploy it to your main site URL with the --prod flag.
+netlify deploy --prod ```
