@@ -14,3 +14,12 @@ This means that you already have another service running on port 4200. If this i
 
 `ng serve --port 9001`
 Open browser at `http://localhost:9001/`
+
+### Create a new component inside a project
+`ng generate component component-name` or use short hand
+`ng g c component-name`
+
+### Data Binding
+#### Interpolation 
+is a one way data binding from the class property to the template - the double curly 
+brackets are used `{{name}}`
