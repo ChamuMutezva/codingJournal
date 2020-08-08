@@ -205,6 +205,18 @@ const persons = [
  the elements will be visible by default. Clicking on the arrow will close the list and open again 
  when clicked. It can be used by the new `details` semantic element
  
+ 
+ # Set Max width to body for bigger screens
+## Bigger screens eg - TV Screens
+```
+@media screen and (min-width: 1450px) {
+    body {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1240px;
+    }
+}
+```
 
 
 
