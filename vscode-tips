@@ -1,0 +1,7 @@
+## VS Code tips
+### Multiple edit or change multiple words in different lines
+```
+Double click on one word - that will highlight all other similar words in the file
+On windows Press `Ctrl` and `F2`
+Enter your changes
+```
