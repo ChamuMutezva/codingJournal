@@ -1,3 +1,4 @@
+```
 /* Box sizing rules */
 *,
 *::before,
@@ -72,3 +73,4 @@ select {
     scroll-behavior: auto !important;
   }
 }
+```
